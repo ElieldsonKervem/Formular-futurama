@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa futurama</title>
+    <title>Pesquisa culturama</title>
 </head>
 <body>
     <header>
+          <img src="./imgs/logo-culturama.png" alt="logo da pagina culturama">
          <h1>Pesquisa online</h1>
     </header>
 
@@ -55,6 +56,43 @@
                      <option value="not-informed">Não informar</option>
                   </select>      
 
+            </fieldset>
+              
+
+            <fieldset>
+                 <legend>Social</legend>
+                  
+                  <label for="facebook">facebook</label>
+                  <input type="checkbox" name="facebook" id="">
+
+                   
+                   <label for="slack">Slack</label>
+                  <input type="checkbox" name="slack" id="">
+
+                   <label for="none-socials">Não gosto</label>
+                  <input type="checkbox" name="none-socials" id="">
+                      
+                  <label for="musical-style-type">Estilo musical</label>
+                  <input type="text" id="musical-style" name="musical-style-type">
+                  <datalist id="musical-style-type">
+                          <option value="rock"></option>
+                           <option value="samba"></option>
+                            <option value="gospel"></option>
+                             <option value="alternativo"></option>  
+                  </datalist>
+            </fieldset>
+             
+            <fieldset class="field-comments">
+                <legend>Deixe seu comentario</legend>
+                <label for="coments">Comentario</label>
+                <input type="text"  name="comments"/>
+            </fieldset>
+              
+
+            <fieldset class="field-legal">
+                <legend>Termos do formulario</legend>
+                <label for="legal-box">Eu aceito participar dessa pesquisa</label>
+                <input type="checkbox" name="legal-box" id="" required>
             </fieldset>
 
             <button type="submit">Enviar</button>
