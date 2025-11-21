@@ -6,6 +6,35 @@
     <title>Pesquisa futurama</title>
 </head>
 <body>
-    
+    <header>
+         <h1>Pesquisa online</h1>
+    </header>
+
+    <section>
+         <form action="" method="get">
+            <fieldset>
+                 
+               <label for="name" > Digite seu nome </label>
+               <input type="text" placeholder="Digite o seu nome" required name="name">
+
+
+               <label for="age">Idade</label>
+               <input type="number" name="age" placeholder="Digite sua idade" min="12" max="100" required>
+
+
+               <label for="birth-day">Data de nascimento</label>
+               <input type="date" name="birth-day">
+
+               <label for="user-email">Deixe aqui seu email</label>
+               <input type="email" required name="user-email" required>
+
+               <label for="user-phone">Deixe aqui seu Telefone</label>
+               <input type="number" required name="user-phone" pattern="[0-9]{11}" required>
+
+
+               <button type="submit">Enviar</button>
+            </fieldset>
+         </form>
+    </section>
 </body>
 </html>
