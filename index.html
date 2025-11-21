@@ -12,7 +12,7 @@
 
     <section>
          <form action="" method="get">
-            <fieldset>
+            <fieldset class="field-main">
                  
                <label for="name" > Digite seu nome </label>
                <input type="text" placeholder="Digite o seu nome" required name="name">
@@ -32,8 +32,32 @@
                <input type="number" required name="user-phone" pattern="[0-9]{11}" required>
 
 
-               <button type="submit">Enviar</button>
+               
             </fieldset>
+            
+            <fieldset class="field-gender">
+                <legend>Perfil</legend>
+                 
+                <p>Opções de genero</p>
+
+                <input type="radio" name="user-gender" value="man">
+                <label for="user-gender">Masculino</label>
+
+                 <input type="radio" name="user-gender" value="woman">
+                 <label for="user-gender">Femeninino</label> 
+                 
+                 <input type="radio" name="user-gender" value="not-informed">
+                 <label for="user-gender">Não declarar</label>
+              
+                  <select name="marital-select" id="">
+                     <option value="married">Casado</option>
+                     <option value="single">Solteiro</option>
+                     <option value="not-informed">Não informar</option>
+                  </select>      
+
+            </fieldset>
+
+            <button type="submit">Enviar</button>
          </form>
     </section>
 </body>
