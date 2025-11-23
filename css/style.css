@@ -1,0 +1,106 @@
+*,
+label {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    margin-top: 2rem;
+    display: flex;
+    padding: 2rem;
+    max-width: 1333px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    justify-content: center;
+}
+
+p,label,legend{
+    margin-left: 0.4rem;
+}
+
+label {
+    font-weight: bold;
+    
+    color: gray;
+    margin: 1rem 0 1rem 0.4rem;
+}
+
+
+
+fieldset input {
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    border: none;
+    box-shadow: -3px 2px 13px rgba(0, 0, 0, 0.2)
+}
+
+fieldset input:focus {
+    outline: none;
+}
+
+.field-gender, .fieldset-social, .field-legal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.field-gender,.fieldset-social input {
+    background: none;
+    box-shadow: none;
+}
+
+.coments{
+    padding: 4rem;
+    border: 0.2px solid rgba(0, 0, 0, 0.2);
+    
+}
+
+#legal-input{
+    width: fit-content;
+}
+
+.btn-main{
+    background: rgb(129, 92, 230);
+     padding: 1rem;
+     border: none;
+     border-radius: 0.4rem;
+     color: white;
+     font-weight: bold;
+     width: 50%;
+     margin: 0 auto;
+}
+
+.btn-main:hover{
+    background: rgb(136, 74, 229);
+    cursor: pointer;
+}
